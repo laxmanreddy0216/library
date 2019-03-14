@@ -1,0 +1,151 @@
+<html>
+<head>
+<script type="text/javascript">
+function Warn()
+{
+	alert("inserted successfully!!!");
+	document.Write("Book added successfully!!!")
+}
+</script>
+<style>
+.bg-image {
+  /* The image used */
+  background-image: url("sam2.jpg");
+  
+  /* Add the blur effect */
+  filter: blur(3px);
+  -webkit-filter: blur(3px);
+  
+  /* Full height */
+  height: 100%; 
+  
+  /* Center and scale the image nicely */
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+/* Position text in the middle of the page/image */
+.bg-text {
+  background-color: rgb(0,0,0); /* Fallback color */
+  background-color: rgba(0,0,0, 0.4); /* Black w/opacity/see-through */
+  color: orange;
+  font-weight: bold;
+  border: 3px solid #f1f1f1;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 2;
+  width: 80%;
+  padding: 20px;
+  text-align: center;
+}
+
+
+a:link{
+color:red;
+text-decoration:none;
+}
+a:hover{
+color:white;
+text-decoration:underline;
+background-color:black;
+}
+a:active{
+color:black;
+}
+h1{
+text-align:center;color:gold;background-color:"navyblue";text-decoration:underline;
+font-style:oblique;
+}
+
+input[type=text] {
+    width: 250px;
+    box-sizing: border-box;
+    border: 2px solid #ccc;
+    border-radius: 4px;
+    font-size: 16px;
+    background-color: white;
+    background-position: 10px 10px; 
+    background-repeat: no-repeat;
+    padding: 8px 15px 8px 20px;
+    -webkit-transition: width 0.4s ease-in-out;
+    transition: width 0.4s ease-in-out;
+	}
+	input[type=text]:focus {
+    width: 120%;
+}
+button {
+    background-color: white;
+    border: none;
+    color: black;
+    padding: 10px 20px;
+    text-align: center;
+    text-decoration: underline;
+    display: inline-block;
+    font-size: 14px;
+    margin: 3px 4px;
+    cursor: pointer;
+	}
+</style>
+</head>
+<body bgcolor="cyan">      
+<div class="bg-image"></div>
+<div class="bg-text">
+<form action="http://localhost:0216/library/books.com" method="post">
+<center>
+<table>
+<tr>
+<td>
+<h2><font color="pink"><b>BookName:</b></font></h2>
+</td>
+<td>
+<input type="text" size="25" name="b1">
+</td>
+<tr>
+<td>
+<h2><font color="pink"><b>BookId:</b></font></h2>
+</td>
+<td>
+<input type="text" size="25" name="b2">
+</td>
+</tr>
+
+<tr>
+<td><h2><font color="pink"><b>BookEdition:</b></font></h2>
+</td>
+<td>
+<input type="text" size="25" name="b3">
+</td>
+</tr>
+<td>
+
+</td>
+
+<tr>
+</td>
+<td><h2><font color="pink"><b>BookPrice:</b></font></h2>
+</td>
+<td>
+<input type="text" size="25" name="b5">
+</td>
+
+
+</tr>
+<tr>
+
+</tr>
+<tr>
+<td>
+</td>
+<td>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<button type="submit" value="create" onclick="Warn();">Submit</button>
+</td>
+
+</tr>
+
+</div>
+
+</body>
+</html>
